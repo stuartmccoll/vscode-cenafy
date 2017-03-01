@@ -1,0 +1,44 @@
+{
+    "name": "vscode-cenafy",
+    "displayName": "Cenafy",
+    "description": "Cenafy Visual Studio Code.",
+    "version": "0.0.1",
+    "publisher": "Stuart McColl",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "icon": "images/icon.png",
+    "bugs": {
+      "url": "https://github.com/stuartmccoll/vscode_cenafy/issues",
+      "email": "contact@stuartmccoll.co.uk"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/stuartmccoll/vscode_cenafy.git"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.cenafy",
+            "title": "And His Name Is..."
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
